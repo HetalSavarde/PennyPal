@@ -1,11 +1,35 @@
-HELP.md
+# Maven
 target/
-.mvn/**
-.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+mvnw.cmd
 
-### STS ###
+# Spring Boot
+*.jar
+*.war
+*.ear
+*.class
+
+# Environment & Secrets
+.env
+.env.*
+application-local.properties
+application-prod.properties
+**/src/main/resources/application-secret.properties
+
+# Firebase / API Keys (never commit these)
+firebaseKey.json
+serviceAccountKey.json
+*-credentials.json
+
+# IDE - IntelliJ
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# IDE - Eclipse / STS
 .apt_generated
 .classpath
 .factorypath
@@ -14,13 +38,7 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
+# IDE - NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
@@ -30,5 +48,18 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
+# IDE - VS Code
 .vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# H2 Database files
+*.db
+*.mv.db
+*.trace.db

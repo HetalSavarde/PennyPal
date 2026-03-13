@@ -1,0 +1,37 @@
+# Root level gitignore for PennyPal
+
+# Environment files — never commit secrets
+.env
+.env.*
+.env.local
+
+# Dependencies
+node_modules/
+
+# Java build output
+target/
+*.class
+*.jar
+*.war
+
+# Next.js
+.next/
+out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log
+logs/
+
+# Secrets — never commit these
+firebaseKey.json
+serviceAccountKey.json
+*-credentials.json
